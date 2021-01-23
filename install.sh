@@ -14,6 +14,6 @@ sudo gdebi -n steam.deb
 sudo gdebi -n java8-installer.deb
 sudo gdebi -n java8-default.deb
 sudo apt install nano
-echo |======================|
-echo |Installation Complete!|
-echo |======================|
+echo #======================
+echo #Installation Complete!
+echo #======================
