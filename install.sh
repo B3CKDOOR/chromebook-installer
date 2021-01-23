@@ -7,7 +7,7 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
-sudo apt install wget gdebi-core libgl1-mesa-glx:i386
+sudo apt install -y wget gdebi-core libgl1-mesa-glx:i386
 sudo dpkg -i discord.deb
 sudo gdebi ~/steam.deb
 sudo apt install nano
