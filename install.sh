@@ -8,8 +8,8 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
 sudo apt install -y wget gdebi-core libgl1-mesa-glx:i386
-sudo dpkg -i discord.deb
-sudo gdebi ~/steam.deb
+sudo gdebi discord.deb
+sudo gdebi steam.deb
 sudo apt install nano
-sudo dpkg -i java8-default.deb
-sudo dpkg -i java8-installer.deb
+sudo gdebi java8-installer.deb
+sudo gdebi java8-default.deb
