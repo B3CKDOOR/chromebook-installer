@@ -8,6 +8,10 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
+echo debconf shared/accepted-oracle-license-v1-1 select true | \
+sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | \
+sudo debconf-set-selections
 sudo apt install -y wget gdebi-core libgl1-mesa-glx:i386
 sudo gdebi -n discord.deb
 sudo gdebi -n steam.deb
