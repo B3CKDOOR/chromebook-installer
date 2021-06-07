@@ -10,6 +10,7 @@ sudo add-apt-repository ppa:videolan/master-daily ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
+sudo rm -f /etc/ssh/sshd_not_to_be_run #Allow SSH server to be run
 echo debconf shared/accepted-oracle-license-v1-1 select true | \
 sudo debconf-set-selections
 echo debconf shared/accepted-oracle-license-v1-1 seen true | \
